@@ -1,0 +1,95 @@
+
+.top-container{
+  text-align: center;
+  padding: 20px;
+  margin-left: 350px;
+  margin-right:350px;
+}
+
+.bottom-container{
+  width: 90%;
+  display:flex;
+  flex-direction: row;
+  margin: 20px auto;
+}
+
+.column{
+  width:33%;
+  padding:20px;
+  margin-bottom: 100px;
+}
+
+.card{
+  border: solid;
+  padding: 20px;
+  margin-top:20px;
+  height: 40%;
+  border-bottom: none;
+  border-right: none;
+  border-left:none;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.img-container{
+  display:flex;
+  flex-direction: row;
+  justify-content:flex-end;
+}
+
+.only-card{
+  margin-top:30%;
+}
+
+.red-card{
+  border-top-color: hsl(0, 78%, 62%);
+}
+
+.orange-card{
+  border-top-color: hsl(34, 97%, 64%);
+}
+.blue-card{
+  border-top-color: hsl(212, 86%, 64%);
+}
+
+.cyan-card{
+  border-top-color: hsl(180, 62%, 55%);
+
+}
+
+.title{
+  font-weight: 200;
+}
+.subtitle{
+  font-weight: 600;
+}
+
+.subtitle, .card-title{
+  color:hsl(234, 12%, 34%);
+}
+
+.card-paragraph, .subtitle-paragraph, .title{
+  color:hsl(229, 6%, 66%)
+}
+
+@media screen and (max-width:1219px){
+  .bottom-container{
+    flex-direction: column;
+    width: 100%;
+  }
+  .column{
+    width: 100%;
+    margin-bottom: 0;
+    padding: 0;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .top-container{
+    display:inline-block;
+    margin: 0 auto;
+  }
+  .only-card{
+    margin-top:20px;
+  }
+  .title, .subtitle{
+    font-size: 1.5em;
+  }
+}
